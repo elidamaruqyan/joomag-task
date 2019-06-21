@@ -1,0 +1,37 @@
+footer {
+
+  &.footer-area {
+    height: 619px;
+    background-image: linear-gradient(90deg, #370567 0, #304f89);
+    @include flexContainer();
+    position: relative;
+
+    @extend .rotate;
+
+    &:after{
+      display: none;
+    }
+
+    h2 {
+      color: $white;
+      font-size: 24px;
+      width: 65%;
+      margin: 0 auto;
+    }
+
+    .group-input {
+      .input-group {
+        margin: 35px auto 30px;
+      }
+    }
+
+    small {
+      font-family: $subTitleFontFamily;
+      font-size: 14px;
+      text-align: center;
+      color: $white;
+      @include fontStyles();
+      //@include fontSize(14px);
+    }
+  }
+}

@@ -1,0 +1,137 @@
+main {
+  section {
+    &.hero-banner {
+      background-image: linear-gradient(to right, #370567 0, #304f89 100%);
+      padding: 95px 0;
+
+      .section-wrapper {
+        width: calcSectionWrapperContent($contentSize, $sectionWrapperWidth);
+        margin: 0 auto;
+
+        .page-logo {
+          img {
+            width: 30%;
+            object-fit: cover;
+          }
+        }
+
+        &-title {
+          @include titleStyle();
+          color: $white;
+          padding: 50px 0 35px;
+        }
+
+        &-description {
+          font-size: 18px;
+          @include fontStyles();
+          font-family: $subTitleFontFamily;
+          color: #ffffff;
+        }
+      }
+    }
+
+    &.trusted-by-section {
+      padding: 100px 0;
+
+      .section-wrapper-title-md-size {
+        h2 {
+          color: $black;
+          padding-bottom: 50px;
+          font-family: $subTitleFontFamily;
+          font-size: $subTitleFontSize;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+        }
+      }
+
+      .slider-wrapper {
+        width: 738px;
+        margin: 0 auto;
+
+        &-item {
+          background: #eaeaea;
+          border-radius: 50%;
+          width: 85px;
+          height: 85px;
+          margin: 0 auto;
+
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    &.weWork-offer-section {
+      background-image: url("../../assets/image-we-work.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: auto;
+      width: 100%;
+      min-height: 680px;
+      position: relative;
+
+      @extend .rotate;
+
+      .opacity-bg {
+        position: absolute;
+        background-image: linear-gradient(to right, rgba(55, 5, 103, 0.8) 0, rgba(48, 79, 137, 0.8) 100%);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        @include flexContainer();
+      }
+    }
+
+    &.features-section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      .flex-container {
+        padding: 50px 0;
+        text-align: left;
+
+        &-item {
+
+          .block-image {
+            display: flex;
+            justify-content: flex-end;
+          }
+
+          img {
+            width: 368px;
+            height: 152px;
+            display: inline-block;
+            vertical-align: middle;
+            object-fit: contain;
+          }
+
+          .block-content {
+            h1 {
+              text-align: left;
+              padding-bottom: 40px;
+            }
+          }
+        }
+      }
+
+      .flex-container-reverse {
+        .block-content {
+          h1 {
+            text-align: right;
+          }
+
+          p {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+

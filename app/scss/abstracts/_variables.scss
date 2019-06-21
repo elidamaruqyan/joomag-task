@@ -1,0 +1,37 @@
+$grid-columns: 12;
+$grid-gutter: 10px;
+$grid-breakpoint: 48em;
+
+$maxContainerSize: 1920px;
+$container: 1600px;
+
+//tab
+$tabContainerSize: 992px;
+$tabContentSize: 960px;
+
+//mobile
+$mobContainerSize: 768px;
+$mobContentSize: 740px;
+
+$mainContainerSize: 1440px;
+$contentSize: 1140px;
+
+$sectionWrapperWidth: 738px;
+$sectionMidWrapperWidth: 465px;
+
+//font size
+$titleFontSize: 36px;
+$mobileTitleSize: 30px;
+$subTitleFontSize: 24px;
+$parTitleFontSize: 18px;
+$titleMobileSize: 15px;
+$fontSize: $titleFontSize;
+
+//font family
+$titleFontFamily: 'ProximaNova-Bold';
+$subTitleFontFamily: 'ProximaNova-Regular';
+
+//colors
+$white: white;
+$black: black;
+$color: $black;

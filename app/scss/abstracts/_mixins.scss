@@ -1,0 +1,39 @@
+@mixin fontSize($size) {
+  font-size: calculateRem($size);
+}
+
+@mixin fontStyles {
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+@mixin titleStyle($color: black) {
+  font-family: $titleFontFamily;
+  color: $color;
+  @include fontStyles();
+  font-size: $titleFontSize;
+}
+
+@mixin subtitleStyle($color: black) {
+  font-family: $subTitleFontFamily;
+  color: $color;
+  @include fontStyles();
+  font-size: $subTitleFontSize
+}
+
+@mixin paragraphStyles() {
+  font-family: $subTitleFontFamily;
+  color: $white;
+  @include fontStyles();
+  font-size: $parTitleFontSize
+}
+
+@mixin flexContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}

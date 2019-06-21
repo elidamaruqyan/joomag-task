@@ -1,0 +1,108 @@
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  main {
+    section {
+      &.hero-banner {
+        .section-wrapper {
+          width: 52.78947%;
+        }
+      }
+    }
+  }
+  .group-input {
+    .input-group {
+      width: 63.2%;
+
+      input {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  main {
+    section {
+      &.hero-banner {
+
+        .section-wrapper {
+          width: 90%;
+
+          &-title {
+            font-size: $mobileTitleSize
+          }
+
+          &-description {
+            font-size: $parTitleFontSize
+          }
+        }
+      }
+
+      &.features-section {
+        .flex-container-item {
+          .block-content {
+            padding-top: 50px;
+            text-align: center;
+
+            h1 {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .group-input {
+    .input-group {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      @include flexContainer();
+      flex-wrap: wrap;
+
+      input.form-control {
+        width: 100%;
+        height: 48px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        margin: 35px 0 30px;
+
+        &::-webkit-input-placeholder {
+          font-family: $subTitleFontFamily;
+          @include fontSize(14px);
+          @include fontStyles();
+          text-align: left;
+          color: #b7b7b7;
+          text-transform: capitalize;
+        }
+      }
+
+      &-prepend {
+        width: 217px;
+        height: 48px;
+        border-radius: 3px;
+        background-color: #296cfc;
+        margin: 0 auto;
+
+        span {
+          color: $white;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          @include flexContainer();
+          @include paragraphStyles();
+        }
+      }
+    }
+  }
+  .flex-container-reverse {
+    flex-flow: column;
+  }
+  footer {
+    &.footer-area {
+      height: auto;
+      padding-top: 100px;
+      padding-bottom: 120px;
+    }
+  }
+}

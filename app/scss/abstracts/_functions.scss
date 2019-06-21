@@ -1,0 +1,37 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@function calcMainContent($maxContainerSize, $container) {
+  @return ($maxContainerSize / $container  ) * 100%;
+}
+
+/* calc content width with percent*/
+@function calcContent($mainContainerSize, $contentSize) {
+  @return ($contentSize * 100  ) / $mainContainerSize * 1%;
+}
+
+@function calcSectionWrapperContent($mainContainerSize, $sectionWrapperWidth) {
+  @return ($sectionWrapperWidth * 100  ) / $mainContainerSize * 1%;
+}
+
+
+/*
+function calc max  992px device width
+*/
+
+@function calcMidSectionWrapperContent($tabContainerSize, $tabContentSize) {
+  @return ($tabContentSize * 100  ) / $tabContainerSize * 1%;
+}
+
+@function calcMidSectionWrapperContent($contentSize, $sectionMidWrapperWidth) {
+  @return ($sectionMidWrapperWidth * 100  ) / $contentSize * 1%;
+}
+/*
+function calc max  768px device width
+*/
+
+@function calcMobSectionWrapperContent($mobContainerSize, $mobContentSize) {
+  @return ($mobContentSize * 100  ) / $mobContainerSize * 1%;
+}

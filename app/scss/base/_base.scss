@@ -1,0 +1,44 @@
+input {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:hover {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content {
+  width: calcContent($mainContainerSize, $contentSize);
+  margin: 0 auto;
+
+  @media screen and (max-width: 992px) {
+    width: calcMidSectionWrapperContent($tabContainerSize, $tabContentSize);
+  }
+
+  @media screen and (max-width: 768px) {
+    width: calcMobSectionWrapperContent($mobContainerSize, $mobContentSize)
+  }
+}
+
+.flex-container {
+  @include flexContainer();
+}
+
+.flex-container-reverse {
+  flex-flow: row-reverse;
+}

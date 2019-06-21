@@ -1,0 +1,21 @@
+.group-input {
+  .input-group {
+    &-prepend {
+      height: 100%;
+      width: 207px;
+      background-color: #296cfc;
+      margin-left: -100px;
+      z-index: 9;
+
+      span {
+        color: $white;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        @include flexContainer();
+        @include paragraphStyles();
+      }
+    }
+  }
+}

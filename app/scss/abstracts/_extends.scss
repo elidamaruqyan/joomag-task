@@ -1,0 +1,38 @@
+.section-wrapper {
+  &-title {
+    color: $white;
+  }
+
+  h2 {
+    color: $white;
+    padding: 35px 0;
+  }
+}
+
+.rotate {
+  &:before {
+    position: absolute;
+    background-color: white;
+    content: '';
+    display: block;
+    height: 100px;
+    left: -10px;
+    top: -51px;
+    transform: rotateZ(-3deg);
+    right: 0;
+    z-index: 1;
+  }
+
+  &:after {
+    position: absolute;
+    background-color: white;
+    content: '';
+    display: block;
+    height: 100px;
+    left: 0;
+    bottom: -61px;
+    transform: rotateZ(-3deg);
+    right: -5px;
+    z-index: 1;
+  }
+}
